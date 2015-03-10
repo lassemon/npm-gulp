@@ -1,0 +1,13 @@
+
+@import "node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+$primarycolor : whitesmoke;
+
+
+body {
+	background: $primarycolor;
+}
+
+div {
+	user-select: none; // testing autoprefixer
+}
