@@ -1,20 +1,18 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync');
+var reload = browserSync.reload;
 
-gulp.task('serve', ['styles'], function () {
+gulp.task('serve', ['styles', 'browserify-watch'], function () {
   browserSync({
     notify: false,
     port: 8080,
     server: {
-      baseDir: ['.tmp', 'app'],
+      baseDir: ['.tmp', 'app']
     }
     
   });
 
   gulp.watch([
-    './app/*.html',
-    './app/scripts/**/*.js',
-    './app/images/**/*',
     './.tmp/**/*'
   ]).on('change', reload);
 
