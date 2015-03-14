@@ -7,7 +7,7 @@ gulp.task('serve', ['styles', 'browserify-watch'], function () {
     notify: false,
     port: 8080,
     server: {
-      baseDir: ['.tmp', 'app']
+      baseDir: ['./.tmp', './app']
     }
     
   });

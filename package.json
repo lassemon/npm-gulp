@@ -6,6 +6,7 @@
   "license"     : "MIT",
   "main"        : "gulpfile.js",
   "scripts"     : {
+    "clean"       : "gulp clean",
     "prestart"    : "gulp",
     "start"       : "gulp serve",
     "build"       : "gulp",
